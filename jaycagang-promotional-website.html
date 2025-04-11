@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Municipality of Tambulig</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Arial', sans-serif;
+      color: #333;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    body {
+      background-image: url('https://i.ibb.co/dJf9zQsM/tambulig.jpg');
+      background-size: cover; 
+      background-position: center; 
+      background-attachment: fixed; 
+      background-repeat: no-repeat; 
+      height: 100vh;
+    }
+
+    header {
+      background-color: rgba(0, 136, 204, 0.8); 
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+      animation: fadeInDown 1s ease-out;
+      border-radius: 10px;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: rgba(0, 102, 153, 0.8);
+      padding: 15px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    nav a {
+      color: white;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+      transition: color 0.3s, transform 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffd700;
+      transform: translateY(-3px);
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+      opacity: 0;
+      background-color: rgba(255, 255, 255, 0.7); 
+      border-radius: 10px;
+      animation: fadeIn 1s forwards;
+    }
+
+    section:nth-of-type(2) {
+      animation-delay: 0.2s;
+    }
+
+    section:nth-of-type(3) {
+      animation-delay: 0.4s;
+    }
+
+    section:nth-of-type(4) {
+      animation-delay: 0.6s;
+    }
+
+    h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+
+   
+    .tourist {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .tourist img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .tourist img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Footer */
+    footer {
+      background-color: rgba(0, 63, 92, 0.8); 
+      color: white;
+      text-align: center;
+      padding: 25px;
+      margin-top: 40px;
+      animation: fadeInUp 1s ease-in;
+    }
+
+    footer p {
+      font-size: 1.1em;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to the Municipality of Tambulig</h1>
+    <p>Your dream vacation destination</p>
+  </header>
+
+
+  <nav>
+    <a href="#home">History</a>
+    <a href="#about">About</a>
+    <a href="#tourist">Tourist</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+
+  <section id="home">
+    <h2>Hisotry of Tambulig</h2>
+    <p>Tambulig, a municipality in Zamboanga del Sur, Philippines, was officially established on December 27, 1957, through Executive Order No. 282 signed by President Carlos P. Garcia. The municipality was formed by combining 41 barangays from the neighboring towns of Aurora and Molave. Subsequently, the creation of the Municipality of Josefina resulted in the transfer of 13 barangays from Tambulig to the new municipality. Later, the Provincial Board of Zamboanga del Sur added three barangays to Tambulig, bringing the total to 31 barangays.The name "Tambulig" is believed to have originated from the term "Tambuli," referring to a type of horn made from a carabao horn or seashell. Another account suggests that the name combines "Tambul," the vernacular term for drum, and "Ilig," a pioneering Subanen hunter from the area. According to local legend, Ilig would play his drum during full moon evenings, and even after his departure, the sounds of his drum could still be heard, leading early settlers to refer to it as the "tambul ni Ilig" or "drum of Ilig."The area was originally inhabited by the Subanen people, who settled along riverbanks in inland regions. Following World War II, migrants, primarily from the Visayas islands, settled in the region. Together with the original inhabitants, these pioneers contributed to the development of Zamboanga del Sur into a culturally diverse province.</p>
+  </section>
+
+
+  <section id="about">
+    <h2>About Tambulig</h2>
+    <p>Tambulig is a 2nd class municipality located in the province of Zamboanga del Sur, Philippines. Nestled in the heart of the Zamboanga Peninsula, Tambulig is a peaceful and vibrant town known for its rich cultural heritage and agricultural economy. It serves as a gateway between the coastal cities and the upland municipalities of the region.Tambulig is composed of 31 barangays and has a population of over 37,000 residents as of the 2020 census. The area is largely rural, with fertile lands ideal for farming rice, corn, and coconut—making agriculture the backbone of its economy.Culturally diverse, Tambulig is home to various ethnic groups including the Subanen, the area’s original inhabitants, and migrants from the Visayas and Luzon who settled here after World War II.
+
+        Tambulig continues to grow while maintaining its charm as a laid-back and welcoming community with a strong connection to its traditions and natural beauty.</p>
+  </section>
+
+
+  <section id="tourist">
+    <h2>Tambulig Tourists</h2>
+    <div class="tourist">
+      <img src="https://i.ibb.co/fzX4845N/resort.jpg" alt="Tambulig Mountain Spring Resort" />
+      <img src="https://i.ibb.co/q358mYCZ/botanical.jpg" alt="Tambulig Mountain Spring Resort Botanical Garden." />
+      <img src="https://i.ibb.co/JjJwbkXG/tambu.png" alt="Tambulig Mountain Spring Resort" />
+      <img src="https://i.ibb.co/tpMZbCr9/1234.jpg" alt="Tambulig" />
+      <img src="https://i.ibb.co/jvjbztRw/1.jpg" alt="Bethesda Resort" />
+      <img src="https://i.ibb.co/qLKkvhhH/124.jpg" alt="Pelocoban Tambulig Spring Resort" />
+    </div>
+  </section>
+
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="">TambuligZDS.gov</a></p>
+    <p>FacebookPage: <a href="https://www.facebook.com/profile.php?id=100070227606930">Libot Suroy sa Tambulig</a></p>
+    <p>Phone: <a href="tel:+12345678900">+1 234 567 8900</a></p>
+  </section>
+
+
+  <footer>
+    <p>&copy; 2025 Municipality of Tambulig. All rights reserved.</p>
+  </footer>
+
+  <script>
+
+    window.onload = function () {
+      window.scrollTo(0, 0); 
+    };
+  </script>
+</body>
+</html>
